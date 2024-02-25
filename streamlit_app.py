@@ -17,8 +17,9 @@ In the meantime, below is an example of what you can do with just a few lines of
 st.title('Image Viewer')
 
 # Load the image from file
-image = Image.open('example_image.jpg')
+image = Image.open('.devcontainer/Screenshot 2021-06-02 141726.png')
 
 # Display the image
 st.image(image, caption='Example Image', use_column_width=True)
+
 
