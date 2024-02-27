@@ -40,7 +40,7 @@ option = st.sidebar.radio('Navigation', ['Home', 'Technique 1', 'Technique 2'])
 if option == 'Home':
     st.title('Home')
     st.write('Welcome to the home screen.')
-    st.image(image, caption='Example Image', use_column_width=True)
+    #st.image(image, caption='Example Image', use_column_width=True)
 
 elif option == 'Technique 1':
     st.title('Technique 1')
