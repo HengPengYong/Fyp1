@@ -33,3 +33,17 @@ st.write(df)
  There are two datasets
 
 """
+
+# Title for the table
+st.write('## Techniques Used')
+
+# Data for the table
+data = {
+    'Dataset': ['Dataset 1', 'Dataset 2'],
+    'Label Encoding': ['Label Encoding', 'Label Encoding'],
+    'Word Embedding': ['all-MiniLM-L12-v2', 'all-MiniLM-L6-v2'],
+    'Model': ['all-MiniLM-L12-v2', 'all-MiniLM-L6-v2']
+}
+
+# Display the table
+st.table(data)
