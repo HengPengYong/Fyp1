@@ -47,7 +47,6 @@ data = {
 
 # Display the table
 st.table(data)
-
 # Define the data for both techniques
 data_technique_1 = {
     'Dataset': ['Dataset 1', 'Dataset 2'],
@@ -63,13 +62,19 @@ data_technique_2 = {
     'Model': ['all-MiniLM-L12-v2', 'all-MiniLM-L6-v2']
 }
 
-# Radio button to select technique
-selected_technique = st.radio("Techniques Used", ['Technique 1', 'Technique 2'])
+# Sidebar navigation
+option = st.sidebar.radio('Navigation', ['Home', 'Technique 1', 'Technique 2'])
 
-# Display table based on selected technique
-if selected_technique == 'Technique 1':
+if option == 'Home':
+    st.title('Home')
+    st.write('Welcome to the home screen.')
+
+elif option == 'Technique 1':
+    st.title('Technique 1')
     st.write('## Techniques Used - Technique 1')
     st.table(data_technique_1)
-elif selected_technique == 'Technique 2':
+
+elif option == 'Technique 2':
+    st.title('Technique 2')
     st.write('## Techniques Used - Technique 2')
     st.table(data_technique_2)
