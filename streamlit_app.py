@@ -25,9 +25,9 @@ data = [
     ('Dataset 2', 'Description of Dataset 2'),
 ]
 
-df = pd.DataFrame(data)
+
 # Display the table
-st.write(df)
+st.table(data)
 
 """
  There are two datasets
