@@ -4,9 +4,22 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+import streamlit as st
+
 def main():
     st.title("Thesis Defense Presentation")
     
+    # Sidebar navigation
+    option = st.sidebar.radio('Navigation', ['Home', 'Technique 1', 'Technique 2'])
+    
+    if option == 'Home':
+        display_home()
+    elif option == 'Technique 1':
+        display_technique_1()
+    elif option == 'Technique 2':
+        display_technique_2()
+
+def display_home():
     # Display today's date
     st.subheader("Date: February 27, 2024")  # Replace with the current date
     
@@ -19,6 +32,13 @@ def main():
     st.write(f"- Candidate: {candidate_name}")
     st.write(f"- Supervisor: {supervisor_name}")
     st.write(f"- Moderator: {moderator_name}")
-    
+
+def display_technique_1():
+    st.subheader("Technique 1 Content Goes Here")
+
+def display_technique_2():
+    st.subheader("Technique 2 Content Goes Here")
+
 if __name__ == "__main__":
     main()
+
