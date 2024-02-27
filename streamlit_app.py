@@ -19,17 +19,14 @@ st.image(image, caption='Example Image', use_column_width=True)
 
 st.write('## Datasets')
 
-# Sample data for demonstration
-data = {
-    'Dataset': ['Dataset 1', 'Dataset 2'],
-    'Description': ['Description of Dataset 1', 'Description of Dataset 2'],
-}
-
-# Create a DataFrame
-df = pd.DataFrame(data)
+# Create a list of tuples containing data for the table
+data = [
+    ('Dataset 1', 'Description of Dataset 1'),
+    ('Dataset 2', 'Description of Dataset 2'),
+]
 
 # Display the table
-st.write(df)
+st.table(data)
 
 """
  There are two datasets
