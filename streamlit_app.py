@@ -41,8 +41,8 @@ st.write('## Techniques Used')
 data = {
     'Dataset': ['Dataset 1', 'Dataset 2'],
     'Label Encoding': ['Label Encoding', 'Label Encoding'],
-    'Word Embedding': ['all-MiniLM-L6-v2', 'all-MiniLM-L12-v2'],
-    '': ['all-MiniLM-L6-v2','']
+    'Word Embedding': ['all-MiniLM-L6-v2', 'all-MiniLM-L6-v2'],
+    '': ['all-MiniLM-L12-v2','']
 }
 
 # Display the table
