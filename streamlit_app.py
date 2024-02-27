@@ -42,7 +42,7 @@ data = {
     'Dataset': ['Dataset 1', 'Dataset 2'],
     'Label Encoding': ['Label Encoding', 'Label Encoding'],
     'Word Embedding': ['all-MiniLM-L12-v2', 'all-MiniLM-L6-v2'],
-    '': ['all-MiniLM-L16-v2']
+    '': ['all-MiniLM-L16-v2','']
 }
 
 # Display the table
