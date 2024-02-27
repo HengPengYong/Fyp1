@@ -12,9 +12,9 @@ from PIL import Image
 st.title('Entire Architecture Diagram')
 
 # Load the image from file
-
+ image = Image.open('.devcontainer/Screenshot 2021-06-02 141726.png')
 # Display the image
-st.image(image, caption='Example Image', use_column_width=True)
+
 
 st.write('## Datasets')
 
@@ -67,7 +67,7 @@ option = st.sidebar.radio('Navigation', ['Home', 'Technique 1', 'Technique 2'])
 if option == 'Home':
     st.title('Home')
     st.write('Welcome to the home screen.')
-    image = Image.open('.devcontainer/Screenshot 2021-06-02 141726.png')
+    st.image(image, caption='Example Image', use_column_width=True)
 
 elif option == 'Technique 1':
     st.title('Technique 1')
