@@ -34,7 +34,7 @@ st.write(df)
 """
 
 # Title for the table
-st.write('## Techniques Used On Feature Variables')
+"st.write('## Techniques Used On Feature Variables')"
 
 # Data for the table
 data = {
