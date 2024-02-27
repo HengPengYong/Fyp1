@@ -29,9 +29,9 @@ def display_home():
     moderator_name = "Prof. Michael Johnson"
     
     st.subheader("Names:")
-    st.write(f"- Candidate: {candidate_name}")
-    st.write(f"- Supervisor: {supervisor_name}")
-    st.write(f"- Moderator: {moderator_name}")
+    st.write(f"- Candidate: {Heng_Peng_Yong}")
+    st.write(f"- Supervisor: {Ting_Choo_Yee}")
+    st.write(f"- Moderator: {Goh_Hui_Ngo}")
 
 def display_technique_1():
     st.subheader("Technique 1 Content Goes Here")
