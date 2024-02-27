@@ -4,37 +4,10 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-"""
-# Multiclass Classification with Many Categories
 
-"""
-# Title for the app
-st.title('Entire Architecture Diagram')
-
-# Load the image from file
-image = Image.open('.devcontainer/Screenshot 2021-06-02 141726.png')
-# Display the image
-
-
-st.write('## Datasets')
-
-# Create a list of tuples containing data for the table
-data = [
-    ('Dataset 1', 'Description of Dataset 1'),
-    ('Dataset 2', 'Description of Dataset 2'),
-]
-
-df = pd.DataFrame(data)
-# Display the table
-st.write(df)
-
-"""
- There are two datasets
-
-"""
 
 # Title for the table
-"st.write('## Techniques Used On Feature Variables')"
+#st.write('## Techniques Used On Feature Variables')
 
 # Data for the table
 data = {
