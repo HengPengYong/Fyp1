@@ -27,7 +27,7 @@ data = [
 
 df = pd.DataFrame(data)
 # Display the table
-st.table(df)
+st.write(df)
 
 """
  There are two datasets
