@@ -8,7 +8,7 @@ import streamlit as st
 
 def main():
         # Custom CSS to set the background color
-    main_bg = "#f0f6ff"  # Light blue color
+    main_bg = "#4CAF50"  # Light blue color
     main_bg_css = f"background-color: {main_bg};"
     st.markdown(
         f"""
