@@ -49,7 +49,7 @@ def display_technique_1():
     df = pd.DataFrame(data)
 
     # Display the table
-    st.table(df)
+    st.write(df)
 
 # Call the function to display the table
 #display_technique_1()
