@@ -35,7 +35,7 @@ def display_home():
     st.write(f"- Moderator: {moderator_name}")
 
 def display_technique_1():
-    st.subheader("Technique 1 Content Goes Here")
+    st.subheader("Comparing the weighted average of precision, recall and f1-score before hyperparameter tuning ")
     data = {
         "Method on first 99 features": ["Label Encoder", "Label Encoder", "Label Encoder", "Label Encoder", "Label Encoder"],
         "Model": ["RF", "Gaussian NB", "DT", "KNN", "SVM"],
