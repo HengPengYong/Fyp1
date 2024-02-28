@@ -11,7 +11,7 @@ def main():
     st.title("Multiclass Classification with Many Categories")
     
     # Sidebar navigation
-    option = st.sidebar.radio('Navigation', ['Home', 'Technique 1', 'Technique 2'])
+    option = st.sidebar.radio('Navigation', ['Home', 'Dataset 1 before hyperparameter tuning', 'Technique 2'])
     
     if option == 'Home':
         display_home()
@@ -59,4 +59,9 @@ def display_technique_2():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
 
