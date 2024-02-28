@@ -15,7 +15,7 @@ def main():
     
     if option == 'Home':
         display_home()
-    elif option == 'Technique 1':
+    elif option == 'Dataset 1 before hyperparameter tuning':
         display_technique_1()
     elif option == 'Technique 2':
         display_technique_2()
@@ -36,6 +36,23 @@ def display_home():
 
 def display_technique_1():
     st.subheader("Technique 1 Content Goes Here")
+        data = {
+        "Method on first 99 features": ["RF", "Gaussian NB", "Label Encoder DT", "KNN", "SVM"],
+        "Model": ["RF", "Gaussian NB", "DT", "KNN", "SVM"],
+        "Accuracy": [0.818, 0.524, 0.883, 0.502, 0.684],
+        "Precision": [0.831, 0.710, 0.906, 0.562, 0.664],
+        "Recall": [0.818, 0.524, 0.883, 0.502, 0.684],
+        "F1 Score": [0.809, 0.572, 0.889, 0.513, 0.662]
+    }
+
+    # Create a DataFrame from the data
+    df = pd.DataFrame(data)
+
+    # Display the table
+    st.table(df)
+
+# Call the function to display the table
+display_technique_1()
 
 def display_technique_2():
     st.subheader("Technique 2 Content Goes Here")
