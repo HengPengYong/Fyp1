@@ -46,7 +46,7 @@ def display_technique_1():
     }
 
     # Create a DataFrame from the data
-    df = pd.DataFrame(data)
+    #df = pd.DataFrame(data)
 
     # Display the table
     st.table(df)
