@@ -36,7 +36,7 @@ def display_home():
 
 def display_technique_1():
     st.subheader("Technique 1 Content Goes Here")
-        data = {
+    data = {
         "Method on first 99 features": ["RF", "Gaussian NB", "Label Encoder DT", "KNN", "SVM"],
         "Model": ["RF", "Gaussian NB", "DT", "KNN", "SVM"],
         "Accuracy": [0.818, 0.524, 0.883, 0.502, 0.684],
