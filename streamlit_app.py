@@ -46,13 +46,13 @@ def display_technique_1():
     }
 
     # Create a DataFrame from the data
-    #df = pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
     # Display the table
     st.table(df)
 
 # Call the function to display the table
-display_technique_1()
+#display_technique_1()
 
 def display_technique_2():
     st.subheader("Technique 2 Content Goes Here")
