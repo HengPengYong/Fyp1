@@ -55,9 +55,9 @@ def display_technique_1():
 #display_technique_1()
 
 def display_technique_2():
-    st.subheader("Technique 2 Content Goes Here")
+    st.subheader("Comparing the weighted average of precision, recall and f1-score after hyperparameter tuning")
     data = {
-        'Method on first 99 features': ['RF', 'Gaussian NB', 'Label Encoder DT', 'KNN', 'SVM'],
+        'Method on first 99 features': ['Label Encoder', 'Label Encoder', 'Label Encoder', 'Label Encoder', 'Label Encoder'],
         'Model': ['RF', 'Gaussian NB', 'DT', 'KNN', 'SVM'],
         'Accuracy': [0.804, 0.665, 0.883, 0.519, 0.694],
         'Precision': [0.815, 0.727, 0.906, 0.547, 0.682],
