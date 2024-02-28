@@ -11,13 +11,13 @@ def main():
     st.title("Multiclass Classification with Many Categories")
     
     # Sidebar navigation
-    option = st.sidebar.radio('Navigation', ['Home', 'Dataset 1 before hyperparameter tuning', 'Technique 2'])
+    option = st.sidebar.radio('Navigation', ['Home', 'Dataset 1 before hyperparameter tuning', 'Dataset 1 after hyperparameter tuning'])
     
     if option == 'Home':
         display_home()
     elif option == 'Dataset 1 before hyperparameter tuning':
         display_technique_1()
-    elif option == 'Technique 2':
+    elif option == 'Dataset 1 after hyperparameter tuning':
         display_technique_2()
 
 def display_home():
@@ -56,6 +56,21 @@ def display_technique_1():
 
 def display_technique_2():
     st.subheader("Technique 2 Content Goes Here")
+    data = {
+        'Method on first 99 features': ['RF', 'Gaussian NB', 'Label Encoder DT', 'KNN', 'SVM'],
+        'Model': ['RF', 'Gaussian NB', 'DT', 'KNN', 'SVM'],
+        'Accuracy': [0.804, 0.665, 0.883, 0.519, 0.694],
+        'Precision': [0.815, 0.727, 0.906, 0.547, 0.682],
+        'Recall': [0.804, 0.665, 0.883, 0.519, 0.694],
+        'F1 Score': [0.794, 0.682, 0.889, 0.526, 0.673]
+    }
+    
+    # Create a DataFrame
+    df = pd.DataFrame(data)
+
+    # Display the table
+    st.write(df)
+
 
 if __name__ == "__main__":
     main()
